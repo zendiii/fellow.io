@@ -1,30 +1,15 @@
 // Ionic Variables and Theming. For more info, please see:
-// http://ionicframework.com/docs/theming/
-
-// Font path is used to include ionicons,
-// roboto, and noto sans fonts
+// http://ionicframework.com/docs/v2/theming/
 $font-path: "../assets/fonts";
-
-
-// The app direction is used to include
-// rtl styles in your app. For more info, please see:
-// http://ionicframework.com/docs/theming/rtl-support/
-$app-direction: ltr;
-
-
 @import "ionic.globals";
-
-
+@import "./ionic.theme.dark";
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
 // Shared Variables
 // --------------------------------------------------
 // To customize the look and feel of this app, you can override
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
-// http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
-
-
-
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
 // Named Color Variables
 // --------------------------------------------------
 // Named colors makes it easy to reuse colors on various components.
@@ -32,36 +17,162 @@ $app-direction: ltr;
 // to match your app's branding. Ionic uses a Sass map of
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
-
-$colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
-);
-
-
+$colors: ( primary: #11C1F3,
+secondary: #2A303D,
+danger: #f53d3d,
+light: #f4f4f4,
+dark: #222,
+dark2: #11C1F3,
+) !default;
+$text-color: #ffffff !default;
+$link-color: color($colors,
+primary) !default;
+$background-color: #fff !default;
+$subdued-text-color: #4D5656 !default;
+$font-family-base: -apple-system,
+"Helvetica Neue",
+"Open Sans Condensed",
+sans-serif !default;
+$font-size-base: 1.4rem !default; // 1.4rem == 14px
+$content-padding: 16px !default;
+$content-margin: 16px !default;
+$toolbar-background: #f8f8f8 !default;
+$toolbar-border-color: #b2b2b2 !default;
+$toolbar-text-color: $text-color !default;
+$toolbar-active-color: $link-color !default;
+$toolbar-inactive-color: #8c8c8c !default;
+$tabs-background: #f8f8f8 !default;
+$tabs-border-color: #b2b2b2 !default;
+$tabs-tab-color-inactive: #8c8c8c !default;
+$tabs-tab-color-active: $link-color !default;
+$list-text-color: $text-color !default;
+$list-background-color: $background-color !default;
+$list-border-color: #c8c7cc !default;
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-
-
-
-
+$colors-ios: copy-colors($colors) !default;
+$text-ios-color: #11C1F3 !default;
+$background-ios-color: $background-color !default;
+$subdued-text-ios-color: $subdued-text-color !default;
+$font-family-ios-base: $font-family-base !default;
+$font-size-ios-base: $font-size-base !default;
+// iOS Outer content
+// --------------------------------------------------
+$content-ios-outer-background: $background-color !default;
+// iOS Card
+// --------------------------------------------------
+$card-ios-header-color: #000 !default;
+// iOS Note
+// --------------------------------------------------
+$item-ios-note-color: #000 !default;
+// iOS Toolbar
+// --------------------------------------------------
+$toolbar-ios-background: $toolbar-background !default;
+$toolbar-ios-border-color: rgba(255,
+255,
+255,
+.1) !default;
+$toolbar-ios-text-color: $toolbar-text-color !default;
+$toolbar-ios-active-color: $toolbar-active-color !default;
+$toolbar-ios-inactive-color: $toolbar-inactive-color !default;
+// iOS Tabs
+// --------------------------------------------------
+$tabs-ios-background: $tabs-background !default;
+$tabs-ios-border-color: rgba(255,
+255,
+255,
+.1) !default;
+$tabs-ios-tab-color-inactive: $tabs-tab-color-inactive !default;
+$tabs-ios-tab-color-active: #11C1F3 !default;
+// iOS List
+// --------------------------------------------------
+$list-ios-text-color: #000 !default;
+$list-ios-border-color: #fff !default;
+$list-ios-background-color: #fff !default;
+$list-ios-activated-background-color: #d9d9d9 !default;
+// iOS List header
+// --------------------------------------------------
+$list-ios-header-color: $text-color !default;
+$item-ios-divider-background: #4D5656 !default;
+$item-ios-divider-color: $text-color !default;
+// iOS Item
+// --------------------------------------------------
+$item-ios-padding-top: 11px !default;
+$item-ios-padding-right: 16px !default;
+$item-ios-padding-bottom: 11px !default;
+$item-ios-padding-left: 16px !default;
+$item-ios-padding-media-top: 10px !default;
+$item-ios-padding-media-bottom: 10px !default;
+$item-ios-padding-icon-top: 9px !default;
+$item-ios-padding-icon-bottom: 8px !default;
+// iOS Toggle
+// --------------------------------------------------
+$toggle-ios-handle-background-color: #f4f4f4 !default;
+$toggle-ios-background-color-on: #11C1F3 !default;
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
-
-
-
-// App Windows Variables
+// Material Design Dark Theme
+// ----------------------------------
+$colors-md: copy-colors($colors) !default;
+$text-md-color: $text-color !default;
+$background-md-color: $background-color !default;
+$subdued-text-md-color: $subdued-text-color !default;
+$font-family-md-base: "Roboto",
+"Helvetica Neue",
+sans-serif !default;
+$font-size-md-base: $font-size-base !default;
+// Material Design Outer content
 // --------------------------------------------------
-// Windows only Sass variables can go here
-
-
-
+$outer-content-md-background-color: $background-color !default;
+// Material Design Toolbar
+// --------------------------------------------------
+$toolbar-md-background: $toolbar-background !default;
+$toolbar-md-border-color: $toolbar-border-color !default;
+$toolbar-md-text-color: #000 !default;
+$toolbar-md-active-color: #11C1F3 !default;
+$toolbar-md-inactive-color: $toolbar-inactive-color !default;
+// Material Design Tabs
+// --------------------------------------------------
+$tabs-md-background: $tabs-background !default;
+$tabs-md-tab-color-inactive: $tabs-tab-color-inactive !default;
+$tabs-md-tab-color-active: #11C1F3 !default;
+// Material Design Card
+// --------------------------------------------------
+$card-md-header-color: #555556 !default;
+$card-md-title-text-color: #000 !default;
+$card-md-text-color: #181818 !default;
+// Material Design List
+// --------------------------------------------------
+$list-md-text-color: $list-text-color !default;
+$list-md-border-color: #dedede !default;
+$list-md-background-color: #fff !default;
+$list-md-activated-background-color: #d9d9d9 !default;
+// Material Design Item
+// --------------------------------------------------
+$item-md-padding-top: 13px !default;
+$item-md-padding-right: 16px !default;
+$item-md-padding-bottom: 13px !default;
+$item-md-padding-left: 16px !default;
+$item-md-padding-media-top: 9px !default;
+$item-md-padding-media-bottom: 9px !default;
+$item-md-padding-icon-top: 11px !default;
+$item-md-padding-icon-bottom: 10px !default;
+$item-md-divider-background: #151515 !default;
+$item-md-divider-color: #f4f4f4 !default;
+// Material Design Toggle
+// ---------------------------------------------------
+$toggle-md-handle-background-color-off: #f4f4f4 !default;
+$toggle-md-handle-background-color-on: #11C1F3 !default;
+// Ripple Color
+// --------------------------------------------------
+@function ripple-background-color($button-color) {
+    @return rgba(red($button-color),
+    green($button-color),
+    blue($button-color),
+    .1);
+}
 
 // App Theme
 // --------------------------------------------------
@@ -69,20 +180,13 @@ $colors: (
 // then be future customized. This import comes last
 // so that the above variables are used and Ionic's
 // default are overridden.
-
 @import "ionic.theme.default";
-
-
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
-// http://ionicframework.com/docs/ionicons/
-
+// http://ionicframework.com/docs/v2/ionicons/
 @import "ionic.ionicons";
-
-
 // Fonts
 // --------------------------------------------------
-
 @import "roboto";
 @import "noto-sans";
