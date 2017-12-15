@@ -1,0 +1,166 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Directory</ion-title>
+  </ion-navbar>
+</ion-header>
+
+    
+
+<ion-content  class="card-background-page">
+<ion-searchbar placeholder="What building?" (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-card >
+    <img (click)="ACTapped($event, item)" src="img/academicComputing.jpg"/>
+    <div (click)="ACTapped($event, item)" class="card-title">Academic Computing</div>
+    <div (click)="ACTapped($event, item)" class="card-subtitle">AC</div>
+  </ion-card>
+    
+  <ion-card>
+    <img (click)="ADTapped($event, item)" src="img/admin.jpg"/>
+    <div (click)="ADTapped($event, item)" class="card-title">Administration</div>
+    <div (click)="ADTapped($event, item)" class="card-subtitle">AD</div>
+  </ion-card>
+
+
+  <ion-card>
+    <img (click)="APTapped($event, item)" src="img/academicSupport.jpg"/>
+    <div (click)="APTapped($event, item)" class="card-title">Academic Support</div>
+    <div (click)="APTapped($event, item)" class="card-subtitle">AP</div>
+  </ion-card>
+
+  <ion-card>
+    <img (click)="CBTapped($event, item)" src="img/police.png"/>
+    <div (click)="CBTapped($event, item)" class="card-title">Center Building</div>
+    <div (click)="CBTapped($event, item)" class="card-subtitle">CB (Campus Police)</div>
+  </ion-card>
+
+  <ion-card>
+    <img (click)="CHTapped($event, item)" src="img/humanities.jpg"/>
+    <div (click)="CHTapped($event, item)" class="card-title">Communications and Humanities Building</div>
+    <div (click)="CHTapped($event, item)" class="card-subtitle">CH</div>
+  </ion-card>
+    
+  <ion-card>
+    <img (click)="CIATTapped($event, item)" src="img/card-madison.png"/>
+    <div (click)="CIATTapped($event, item)" class="card-title">Construction/Industrial Applied Technology</div>
+    <div (click)="CIATTapped($event, item)" class="card-subtitle">CIAT</div>
+  </ion-card>
+    
+  <ion-card>
+    <img (click)="CTTapped($event, item)" src="img/computertech.jpg"/>
+    <div (click)="CTTapped($event, item)" class="card-title">Computer Technology</div>
+    <div (click)="CTTapped($event, item)" class="card-subtitle">CT</div>
+  </ion-card>
+
+    
+  <ion-card>
+    <img (click)="DHTapped($event, item)" src="img/dental-hygiene.jpg"/>
+    <div (click)="DHTapped($event, item)" class="card-title">Dental Hygiene</div>
+    <div (click)="DHTapped($event, item)" class="card-subtitle">DH</div>
+  </ion-card>
+    
+  <ion-card>
+    <img (click)="ENTapped($event, item)" src="img/english.jpg"/>
+    <div (click)="ENTapped($event, item)" class="card-title">English</div>
+    <div (click)="ENTapped($event, item)" class="card-subtitle">EN</div>
+  </ion-card>
+    
+  <ion-card>
+    <img (click)="FPACTapped($event, item)" src="img/na.png"/>
+    <div (click)="FPACTapped($event, item)" class="card-title">Fine and Performaing Arts</div>
+    <div (click)="FPACTapped($event, item)" class="card-subtitle">FPAC</div>
+  </ion-card>
+  
+    
+  <ion-card>
+    <img (click)="hssTapped($event, item)" src="img/hss.jpg"/>
+    <div (click)="hssTapped($event, item)" class="card-title">History & Social Sciences</div>
+    <div (click)="hssTapped($event, item)" class="card-subtitle">HSS</div>
+  </ion-card>
+    
+  <ion-card>
+    <img (click)="LBTapped($event, item)" src="img/library.jpg"/>
+    <div (click)="LBTapped($event, item)" class="card-title">Library</div>
+    <div (click)="LBTapped($event, item)" class="card-subtitle">LB</div>
+  </ion-card>
+    
+      
+  <ion-card>
+    <img (click)="LCTapped($event, item)" src="img/learningcommons.jpg"/>
+    <div (click)="LCTapped($event, item)" class="card-title">Learning Commons</div>
+    <div (click)="LCTapped($event, item)" class="card-subtitle">LC</div>
+  </ion-card>  
+      
+  <ion-card>
+    <img (click)="LSTapped($event, item)" src="img/lifetimesports.jpg"/>
+    <div (click)="LSTapped($event, item)" class="card-title">Lifetime Sports</div>
+    <div (click)="LSTapped($event, item)" class="card-subtitle">LS</div>
+  </ion-card>  
+    
+          
+  <ion-card>
+    <img (click)="mlhTapped($event, item)" src="img/sciencelecture.jpg"/>
+    <div (click)="mlhTapped($event, item)" class="card-title">Science Lecture Hall</div>
+    <div (click)="mlhTapped($event, item)" class="card-subtitle">MLH</div>
+  </ion-card>  
+              
+  <ion-card>
+    <img (click)="SMTapped($event, item)" src="img/sciencemath.jpg"/>
+    <div (click)="SMTapped($event, item)" class="card-title">Science and Math</div>
+    <div (click)="SMTapped($event, item)" class="card-subtitle">SM</div>
+  </ion-card>  
+    
+  <ion-card>
+    <img (click)="SMATapped($event, item)" src="img/professionaldevelopment.jpg"/>
+    <div (click)="SMATapped($event, item)" class="card-title">Science and Math Annex</div>
+    <div (click)="SMATapped($event, item)" class="card-subtitle">SMA</div>
+  </ion-card>  
+                 
+  <ion-card>
+    <img (click)="SSTapped($event, item)" src="img/ss.png"/>
+    <div (click)="SSTapped($event, item)" class="card-title">Support Services</div>
+    <div (click)="SSTapped($event, item)" class="card-subtitle">SS</div>
+  </ion-card>  
+                   
+  <ion-card>
+    <img (click)="SUTapped($event, item)" src="img/studentunion.jpg"/>
+    <div (click)="SUTapped($event, item)" class="card-title">Student Union</div>
+    <div (click)="SUTapped($event, item)" class="card-subtitle">SU</div>
+  </ion-card>  
+      
+  <ion-card>
+    <img (click)="tppTapped($event, item)" src="img/tpp.jpg"/>
+    <div (click)="tppTapped($event, item)" class="card-title">Technology and Professional Progams</div>
+    <div (click)="SUTapped($event, item)" class="card-subtitle">TPP</div>
+  </ion-card>
+    
+  <ion-card>
+    <img (click)="SUTapped($event, item)" src="img/universitycenter.jpg"/>
+    <div (click)="SUTapped($event, item)" class="card-title">University Center</div>
+    <div (click)="SUTapped($event, item)" class="card-subtitle">UC</div>
+  </ion-card>
+    
+    
+</ion-content>
+    
+    
+
+
+
+    
+<!--  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="ACTapped($event, item)">
+      <ion-icon [name]="item.icon" item-left></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-right>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+-->
+

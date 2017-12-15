@@ -1,0 +1,58 @@
+<ion-header  class="fellowfont">
+  <ion-navbar>
+    <ion-title>Academic Computing</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="fellowfont">
+    
+    <button (click)="pushPage($event, item)" (click)="presentLoading()" class="fellowfont" ion-button  id="button" round full > <ion-icon name="md-locate" class="iconalign"></ion-icon>   N A V I G A T E  </button>
+      
+<ion-card>
+ <!-- 
+  <ion-fab right top>
+    <button ion-fab>
+      <ion-icon name="pin"></ion-icon>
+    </button>
+  </ion-fab>
+-->
+  <ion-item>
+    <ion-icon name="ios-laptop" class="custom-icon" item-left large></ion-icon>
+      
+    <h2>First Floor</h2>
+    <p>STEM Center</p> <p>Computer Labs</p> <p>Restrooms</p>
+  </ion-item>
+  <ion-item id="button">
+    <span item-left>1 min</span>
+    <span item-left>(0.2 mi)</span>
+    <button class="custom-icon" ion-button icon-left clear item-right>
+      <ion-icon name="md-map" color="dark"></ion-icon>
+      Floor Plan
+    </button>
+  </ion-item>
+</ion-card>
+    
+    
+<ion-card>
+
+
+  <ion-item >
+       <ion-icon name="md-book" class="custom-icon" item-left large></ion-icon>
+      <h2>Second Floor</h2>
+   
+    <p>blase</p> <p>blase</p>
+  </ion-item>
+  <ion-item id="button">
+    <span item-left>2 min</span>
+    <span item-left>(0.3 mi)</span>
+    <button class="custom-icon" ion-button icon-left clear item-right>
+      <ion-icon name="md-map" color="dark"></ion-icon>
+      Floor Plan
+    </button>
+  </ion-item>
+</ion-card>
+    
+    
+    
+</ion-content>

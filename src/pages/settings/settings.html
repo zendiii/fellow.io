@@ -1,0 +1,43 @@
+<ion-header class="fellowfont">
+    <ion-navbar>
+        <ion-title>Settings</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="fellowfont">
+
+    <ion-list>
+
+
+
+        <ion-item>
+            <ion-label class="textc">Schedule Alerts </ion-label>
+            <ion-toggle [(ngModel)]="scheduleAlerts" color="dark"></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+            <ion-label class="textc">Auto Directions
+                <p>Automatically routes you to your next class. </p>
+            </ion-label>
+            <ion-toggle color="dark" [(ngModel)]="sausage"></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+            <ion-label class="textc">Event Notifications
+                <p> Recieve notifications about campus events.</p>
+            </ion-label>
+            <ion-toggle color="dark" [(ngModel)]="mushrooms"></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+            <ion-label class="textc">Dark Map Theme </ion-label>
+            <ion-toggle color="dark" [(ngModel)]="ChangeMmapTheme"></ion-toggle>
+        </ion-item>
+
+    </ion-list>
+
+    <button (click)="changeCampus($event, item)" class="fellowfont" ion-button id="button" round full> <ion-icon name="md-school" class="iconalign"></ion-icon>   Change Campus  </button>
+
+
+</ion-content>

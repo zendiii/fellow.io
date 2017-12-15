@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Directory
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-searchbar placeholder="What building?" (ionInput)="getItems($event)"></ion-searchbar>
+<ion-card>
+  <ion-item *ngFor="let item of items">
+    {{ item }}
+  </ion-item>
+</ion-card>
+<ion-content class="card-background-page">
+
+  <ion-card>
+    <img (click)="itemTapped($event, item)" src="img/academicComputing.png"/>
+    <div class="card-title">Academic Computing</div>
+    <div class="card-subtitle">AC</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="img/support.png"/>
+    <div class="card-title">Academic Support</div>
+    <div class="card-subtitle">AP</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="img/police.png"/>
+    <div class="card-title">Center Building</div>
+    <div class="card-subtitle">CB (Campus Police)</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="img/card-madison.png"/>
+    <div class="card-title">Communications and Humanities Building</div>
+    <div class="card-subtitle">CH</div>
+  </ion-card>
+    
+  <ion-card>
+    <img src="img/card-madison.png"/>
+    <div class="card-title">Construction/Industrial Applied Technology</div>
+    <div class="card-subtitle">CIAT</div>
+  </ion-card>
+    
+  <ion-card>
+    <img src="img/card-madison.png"/>
+    <div class="card-title">Computer Technology</div>
+    <div class="card-subtitle">CT</div>
+  </ion-card>
+
+    
+  <ion-card>
+    <img src="img/dental-hygiene.png"/>
+    <div class="card-title">Dental Hygiene</div>
+    <div class="card-subtitle">DH</div>
+  </ion-card>
+</ion-content>
+    
+</ion-content>
