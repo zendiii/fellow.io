@@ -29,8 +29,6 @@ presentLoading(){
   RouteTapped(event, item) {
     this.navCtrl.push(CampusMap, {
       item: item,
-        TTPLT: 3.444305,
-        TTPLN: -8.340421
     });
 
   }

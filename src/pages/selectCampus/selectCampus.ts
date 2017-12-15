@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-
-
 import { NavController } from 'ionic-angular';
 import{ LoadingController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
@@ -17,23 +15,15 @@ export class selectCampus {
 
 
 
-  constructor(public navCtrl: NavController, public loadingCtrl: LoadingController,  public geolocation: Geolocation) {
+  constructor(public navCtrl: NavController, public geolocation: Geolocation) {
 
   }
 
-presentLoading(){
-    let loader =this.loadingCtrl.create({
-        spinner: "dots",
-        content: "Indexing Places",
-        duration: 3000
-    });
-    loader.present();
-}
+  goToHome(){
+      this.navCtrl.setRoot('CampusMap');
+    }
 
 
-    goBack() {
-    this.navCtrl.pop();
-}
 
 
 }

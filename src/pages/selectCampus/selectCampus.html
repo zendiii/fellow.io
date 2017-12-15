@@ -1,34 +1,41 @@
 <ion-header  class="fellowfont">
   <ion-navbar>
-    <ion-title>Technology and Professional Programs</ion-title>
+
   </ion-navbar>
 </ion-header>
 
 
 <ion-content class="fellowfont">
-    
-<ion-row>
-    <ion-col col-9>
-      <ion-item>
-        <ion-input type="text" [(ngModel)]="newItem" placeholder="New Shopping item"></ion-input>
-      </ion-item>
-    </ion-col>
-    <ion-col>
-      <button ion-button (click)="addItem()">Add!</button>
-    </ion-col>
-  </ion-row>
- 
-  <ion-list>
-    <ion-item-sliding *ngFor="let item of shoppingItems | async">
-      <ion-item>
-        {{ item.$value }}
-      </ion-item>
-      <ion-item-options side="right">
-        <button ion-button color="danger" icon-only (click)="removeItem(item.$key)"><ion-icon name="trash"></ion-icon></button>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
-    
-    
-    
+
+  <ion-slides pager="true">
+
+    <ion-slide>
+      <img src="images/slide1.png" />
+    </ion-slide>
+
+    <ion-slide>
+      <img src="images/slide2.png" />
+    </ion-slide>
+
+    <ion-slide>
+      <img src="images/slide3.png" />
+    </ion-slide>
+
+    <ion-slide>
+      <ion-row>
+        <ion-col>
+          <img src="images/slide4.png" />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <button ion-button color="light" (click)="goToHome()">Start Using My App</button>
+        </ion-col>
+      </ion-row>
+    </ion-slide>
+
+  </ion-slides>
+
+
+
 </ion-content>
