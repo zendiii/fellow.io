@@ -49,6 +49,7 @@ page-campusMap {
     /* Display the control once it is inside the map. */
     #map .map-control {
         display: block;
+        height: 100%;
     }
     .selector-control {
         font-size: 14px;
