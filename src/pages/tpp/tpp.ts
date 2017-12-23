@@ -3,7 +3,7 @@ import { CampusMap } from '../campusMap/campusMap'
 import { NavController } from 'ionic-angular';
 import{ LoadingController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
-
+import { Direct } from '../../models/direct';
 
 
 @Component({
@@ -13,6 +13,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 })
 export class Tpp {
 
+  direct = {} as Direct;
   constructor(public navCtrl: NavController, public loadingCtrl: LoadingController, public CampusMap: CampusMap, public geolocation: Geolocation) {
 
   }

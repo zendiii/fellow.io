@@ -9,6 +9,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
 
 
+
 import { Schedule } from '../pages/schedule/schedule';
 import { CampusMap } from '../pages/campusMap/campusMap';
 import { TabsPage } from '../pages/tabs/tabs';
